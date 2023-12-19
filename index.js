@@ -46,5 +46,5 @@ io.on('connection', (socket) => {
 
 server.listen(3000, () => {
     console.log('App is listening on port 3000');
-    connect();
+    // connect();
 });
