@@ -18,6 +18,10 @@ const io = new Server(server, {
     }
 });
 
+app.get('/', (req, res)=>{
+    res.send("Hello! This is Chatting application");
+})
+
 // use socket events
 io.on('connection', (socket) => {
     console.log('connection is established');
